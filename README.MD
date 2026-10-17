@@ -4,7 +4,7 @@ This project, MAHJONG_C, aims to provide a framework library for bot development
 
 The library, written exclusively in C, comes in two versions: a Linux-compatible distribution and a Windows-compatible distribution. The emulator application similarly is desigend to be cross-platform functional as well. The GUI portion of this project was written in Java. As such, the whole project is designed to run seamlessly regardless of your operating system.
 
-- 1. **System Requirements**
+**1.1 System Requirements**
 - Operating System: Windows, Linux or MacOS.
 - C Standards: C99 or later.
 - Compilers: GCC (tested).
