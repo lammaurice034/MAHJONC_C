@@ -468,8 +468,8 @@ Once you have your .dll or .so file(s) ready, refer to '2.1 Loading Bots for Emu
 MAHJONC_C: HK Mahjong emulator and bot development framework.
 
 ## 5.1 License
-This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See LICENSE.TXT for the full license text.
-Copyright © 2026 Maurice Lam. All rights reserved, subject to the terms of the GPL-3.0 license.
+This project is licensed under the Apache License 2.0. See LICENSE.TXT for the full license text.
+Copyright © 2026 Maurice Lam. All rights reserved, subject to the terms of the license.
 
 ## 5.2 Third-party assets:
 
