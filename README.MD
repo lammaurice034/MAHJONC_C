@@ -433,7 +433,7 @@ In addition, this snippet of the code is also required for the emulator to load 
 
 ## 4.2 Bot Strategy Function
 
-****Your strategy function, with type declared as `typedef short (*BotStrat)(struct GameInput *g, void* customData, struct Settings *s);`, will take three parameters. `g` passes all available details regarding the game for your bot to decide on an action; while `custom_data` points to any configurations you might have set. `s` is a list of game rules applied on the game such as minimum points requirement (see '3.3.1 Code Documentation - UTILS.H' for further information).
+Your strategy function, with type declared as `typedef short (*BotStrat)(struct GameInput *g, void* customData, struct Settings *s);`, will take three parameters. `g` passes all available details regarding the game for your bot to decide on an action; while `custom_data` points to any configurations you might have set. `s` is a list of game rules applied on the game such as minimum points requirement (see '3.3.1 Code Documentation - UTILS.H' for further information).
 
     short strat_random(struct GameInput *g, void *custom_data, struct Settings *s){
       return arr_get(&(g->possibleMoves), rand() % g->possibleMoves.size);
