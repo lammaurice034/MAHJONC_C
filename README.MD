@@ -429,7 +429,7 @@ In addition, this snippet of the code is also required for the emulator to load 
     #endif
     const struct Bot *mahjong_bot_init(void){return bots;}
 
-*Exhibit 4.2: Sample of array of bots available in your plugin*
+*Exhibit 4.2: Required snippet for your code*
 
 ## 4.2 Bot Strategy Function
 
