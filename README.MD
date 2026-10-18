@@ -60,12 +60,12 @@ The library is designed to be portable. To include in your project, make a copy 
 Working Directory/
 ├── yourBotAlgorithm.c
 └── MahjC_SDK(_WIN or _LINUX)/
-├── bot.h
-├── game.h
-├── libmahjong.a
-├── mahjong_c.h
-├── player.h
-└── utils.h
+  ├── bot.h
+  ├── game.h
+  ├── libmahjong.a
+  ├── mahjong_c.h
+  ├── player.h
+  └── utils.h
 ```
 
 _Exhibit 3.1: Sample directory tree_
@@ -353,12 +353,12 @@ Cangjie6 (2022). Kanji var mj.svg \[Image\]. Wikimedia Commons. <https://commons
 MyBotCollection/
 ├── myBots.c
 └── MahjC_SDK_WIN/
-├── bot.h
-├── game.h
-├── libmahjong.a
-├── mahjong_c.h
-├── player.h
-└── utils.h
+  ├── bot.h
+  ├── game.h
+  ├── libmahjong.a
+  ├── mahjong_c.h
+  ├── player.h
+  └── utils.h
 ```
 
 _Exhibit 6.1: Sample directory tree_
