@@ -20,7 +20,7 @@ The library, written exclusively in C, comes in two versions: a Linux-compatible
 
 # 2. Emulator Documentation
 
-The emulator is designed to be compatible with Windows and Linux distributions. To launch the application, change the directory of your command console to `./MAHJONG_C`, then launch using the command line below:
+Download the entire directory as is. It is designed to be portable and compatible with Windows and Linux distributions. To launch the application, navigate to `./MAHJONG_C`, then launch using the command line below:
 
     ./MAHJC <gui=value> [pauses=value] [maxrounds=value] [p0=value] [p1=value] [p2=value] [p3=value]
 
