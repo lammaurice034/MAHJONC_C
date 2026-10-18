@@ -4,7 +4,7 @@ This project, MAHJONG_C, aims to provide a framework library for bot development
 
 The library, written exclusively in C, comes in two versions: a Linux-compatible distribution and a Windows-compatible distribution. The emulator application similarly is desigend to be cross-platform functional as well. The GUI portion of this project was written in Java. As such, the whole project is designed to run seamlessly regardless of your operating system.
 
-**1.1 System Requirements**
+- 1. **System Requirements**
 - Operating System: Windows, Linux or MacOS.
 - C Standards: C99 or later.
 - Compilers: GCC (tested).
@@ -60,12 +60,12 @@ The library is designed to be portable. To include in your project, make a copy 
 Working Directory/
 ├── yourBotAlgorithm.c
 └── MahjC_SDK(_WIN or _LINUX)/
-  ├── bot.h
-  ├── game.h
-  ├── libmahjong.a
-  ├── mahjong_c.h
-  ├── player.h
-  └── utils.h
+├── bot.h
+├── game.h
+├── libmahjong.a
+├── mahjong_c.h
+├── player.h
+└── utils.h
 ```
 
 _Exhibit 3.1: Sample directory tree_
@@ -353,12 +353,12 @@ Cangjie6 (2022). Kanji var mj.svg \[Image\]. Wikimedia Commons. <https://commons
 MyBotCollection/
 ├── myBots.c
 └── MahjC_SDK_WIN/
-  ├── bot.h
-  ├── game.h
-  ├── libmahjong.a
-  ├── mahjong_c.h
-  ├── player.h
-  └── utils.h
+├── bot.h
+├── game.h
+├── libmahjong.a
+├── mahjong_c.h
+├── player.h
+└── utils.h
 ```
 
 _Exhibit 6.1: Sample directory tree_
@@ -367,7 +367,7 @@ myBots.c:
 
 ```
 #include "mahjong_c.h"
-#include "<stdlib.h>"
+#include <stdlib.h>
 // custom strat functions - must take in these 3 parameters
 short strat_A(struct GameInput *g, void *custom_data, struct Settings *s){
     // returns a random valid move
@@ -375,7 +375,7 @@ short strat_A(struct GameInput *g, void *custom_data, struct Settings *s){
 }
 short strat_B(struct GameInput *g, void *custom_data, struct Settings *s){
     // returns the legal move with the largest action code if *custom_data = 0, smallest otherwise
-    if((int)*custom_data){
+    if(*(int*)custom_data){
         return arr_get(&(g->possibleMoves), g->possibleMoves.size-1);
     }
     return arr_get(&(g->possibleMoves), 0);
