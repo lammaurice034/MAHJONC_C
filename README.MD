@@ -46,7 +46,7 @@ Once you have custom bot plugin .dll and/or .so file(s) (see '4. Creating Your O
 
 There are also three default options, 'Random', 'User Input' and 'Call Everything', always occupying the first three indicies respectively. 'Random' selects any valid move at random, 'Call Everything' executes the move with the largest action code, while 'User Input' allows the user to make an inputting move on either the console or the GUI. Please be advised that having more than one 'User Input' player is only allowed in console mode and not GUI mode.
 
-## 2.1.1 Operating the 'User Input' bot
+### 2.1.1 Operating the 'User Input' bot
 
 In console mode, whenever it is the user's turn, the emulation pauses untill the it receives an numerical input representing the move. The list of legitimate codes will be displayed on screen along a description of the action. It is imperative to note that entering invalid values might cause unexpected behaviours.
 
@@ -443,7 +443,7 @@ Your strategy function, with type declared as `typedef short (*BotStrat)(struct 
 
 Shall the strategy function return an invalid value (i.e. a value not listed in `g->possibleMoves`, the action with the smallest code will be executed automatically.
 
-## 4.2.1 Remarks on Memory Management
+### 4.2.1 Remarks on Memory Management
 
 There is no need for memory management regarding `GameInput *g`, i.e. do not call `gameinput_dispose()` on `g`. This applies to `Settings *s` as well. You shan't be concerned about integrity of the data within `*g` as it is disposed in the emulator loop immediately after your bot returns a move (i.e. you might modify data within `*g` as deem required). Any other variables that you have initialized during the calculation process, however, would require cleaning up; the emulator is not set up to prevent memory leaks from user-created bots.
 
@@ -471,7 +471,7 @@ MAHJONC_C: HK Mahjong emulator and bot development framework.
 This project is licensed under the Apache License 2.0. See LICENSE.TXT for the full license text.
 Copyright © 2026 Maurice Lam. All rights reserved, subject to the terms of the license.
 
-## 5.2 Third-party assets:
+## 5.2 Third-party assets
 
 This project includes third-party media that may be licensed separately under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). See https://creativecommons.org/licenses/by-sa/4.0/ and THIRD_PARTY_NOTICES.TXT for further information.
 
