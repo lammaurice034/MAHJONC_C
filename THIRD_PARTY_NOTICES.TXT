@@ -1,0 +1,8 @@
+THIRD-PARTY NOTICES
+This project includes third-party materials licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+
+These materials are subject to their respective licenses, separate from the GNU General Public License v3.0 that applies to this project's software code.
+
+ASSET 1
+Cangjie6 (2022). Kanji var mj.svg \[Image\]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Kanji_var_mj.svg. Licensed under CC BY-SA 4.0. 
+Modifications: used the text provided to create images for the tiles used in the GUI.
